@@ -1,0 +1,284 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap'); */
+
+@font-face {
+    font-family: UFO;
+    src: url("SFAlienEncounters.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Press Start 2P", system-ui; */
+}
+
+body{
+    font-family: 'UFO';
+}
+
+#fundo {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#area_jogo {
+    background: url(../img/cenário.png);
+    position: absolute;
+	width: 680px;
+	height: 350px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25px;
+}
+
+#alerta {
+    display: block;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    margin-left: 150px;
+}
+
+/* *******PLAYER******* */
+#player {
+    width: 153px;
+    height: 100px;
+    left: 100px;
+    position: absolute;
+    background-image: url("../img/player.png");
+    top: 500px;
+    z-index: 99;
+
+    animation: p_player .9s steps(6) infinite;
+    -webkit-animation: p_player .9s steps(6) infinite;
+    -moz-animation: p_player .9s steps(6) infinite;
+    -moz-animation: p_player .9s steps(6) infinite;
+    -o-animation: p_player .9s steps(6) infinite;
+    
+}
+
+@keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px;}
+}
+
+@keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px; }
+}
+
+@-webkit-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px; }
+}
+
+@-moz-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px; }
+}
+
+@-moz-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px; }
+}
+
+
+@-o-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -931px; }
+}
+
+
+/* *******Tiro******* */
+.tiro_player {
+	width: 12px;
+	height: 19px;
+	left: 630px;
+	top: 10px;
+	position: absolute;
+	background-image: url("../img/tiro.png");
+	animation:p_ini_tiro 0.6s steps(4) ;
+
+       -webkit-animation: p_ini_tiro 0.6s steps(4) infinite;
+       -moz-animation: p_ini_tiro 0.6s steps(4) infinite;
+       -ms-animation: p_ini_tiro 0.6s steps(4) infinite;
+       -o-animation: p_ini_tiro 0.6s steps(4) infinite;	
+}
+
+
+@keyframes p_ini_tiro {
+	from {background-position:0px;}
+	to {background-position:-46px;}
+}
+
+
+@-webkit-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -46px; }
+}
+
+@-moz-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -46px; }
+}
+
+@-ms-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -46px; }
+}
+
+@-o-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -46px; }
+}
+
+.tiro {
+	width: 46px;
+	height: 19px;
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	background-image: url("../img/tiro.png");
+    z-index: 99;
+}
+
+/* *******TANQUE******* */
+#tanque {
+    width: 112px;
+    height: 80px;
+    position: absolute;
+    background-image: url("../img/tanque.png");
+    top: 510px;
+    right: 1%;
+
+    animation: tanque .9s steps(3) infinite;
+    -webkit-animation: tanque .9s steps(3) infinite;
+    -moz-animation: tanque .9s steps(3) infinite;
+    -moz-animation: tanque .9s steps(3) infinite;
+    -o-animation: tanque .9s steps(3) infinite;
+
+}
+@keyframes tanque {
+    from { background-position: 0px;}
+    to { background-position: -338px;}
+}
+
+@keyframes tanque {
+    from { background-position: 0px;}
+    to { background-position: -338px; }
+}
+
+@-webkit-keyframes tanque {
+    from { background-position: 0px;}
+    to { background-position: -338px; }
+}
+
+@-moz-keyframes tanque {
+    from { background-position: 0px;}
+    to { background-position: -338px; }
+}
+
+
+@-o-keyframes tanque {
+    from { background-position: 0px;}
+    to { background-position: -338px; }
+}
+    
+/* *******NAVE******* */
+#nave {
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    background-image: url("../img/nave.png");
+    top: 110px;
+    right: 1%;
+
+    animation: nave .9s steps(5) infinite;
+    -webkit-animation: nave .9s steps(5) infinite;
+    -moz-animation: nave .9s steps(5) infinite;
+    -moz-animation: nave .9s steps(5) infinite;
+    -o-animation: nave .9s steps(5) infinite;
+
+}
+
+@keyframes nave {
+    from { background-position: 0px;}
+    to { background-position: -700px;}
+}
+
+@keyframes nave {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+@-webkit-keyframes nave {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+@-moz-keyframes nave {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+
+@-o-keyframes nave {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+/* *******HOMEM BAZUCA******* */
+#homemBazuca {
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    background-image: url("../img/homemBazuca.png");
+    top: 310px;
+    right: 1%;
+
+    animation: homemBazuca .9s steps(10) infinite;
+    -webkit-animation: homemBazuca .9s steps(10) infinite;
+    -moz-animation: homemBazuca .9s steps(10) infinite;
+    -moz-animation: homemBazuca .9s steps(10) infinite;
+    -o-animation: homemBazuca .9s steps(10) infinite;
+
+}
+
+@keyframes homemBazuca {
+    from { background-position: 0px;}
+    to { background-position: -700px;}
+}
+
+@keyframes homemBazuca {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+@-webkit-keyframes homemBazuca {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+@-moz-keyframes homemBazuca {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+
+@-o-keyframes homemBazuca {
+    from { background-position: 0px;}
+    to { background-position: -700px; }
+}
+
+#vida{
+    background-image: url("../img/vida.png");
+    background-position: -118px 52px;
+    height: 52px;
+    width: 118px;
+    position: absolute;
+    left: 5px;
+    z-index: 98;
+}

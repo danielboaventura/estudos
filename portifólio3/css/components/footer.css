@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--dark-secondary-color);
+}
+
+footer .footer__content {
+    text-align: center;
+    padding: 6rem 2rem 1rem;
+    max-width: 47rem;
+}
+
+footer .footer__content .footer__contact span {
+    display: block;
+    font-weight: 500;
+}
+
+footer .footer__content ul li {
+    display: inline-block;
+}
+
+footer .footer__content ul a {
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+footer .footer__content ul a :hover {
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .footer__content .footer__copyright {
+    font-size: 1.4rem;
+}
